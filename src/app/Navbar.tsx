@@ -1,6 +1,7 @@
 import React from "react";
 import Link from 'next/link';
 import Image from 'next/image';
+import {SignInButton} from "~/components/Buttons";
 
 function Navbar () {
     return (
@@ -22,6 +23,9 @@ function Navbar () {
                 </li>
                 <li className='flex p-1 items-center h-10'>
                     <Link href={'/users'}>Users</Link>
+                </li>
+                <li className='flex p-1 items-center h-10'>
+                    <SignInButton />
                 </li>
             </ul>
 

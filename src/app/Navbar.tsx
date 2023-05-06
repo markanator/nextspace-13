@@ -2,7 +2,7 @@ import React from "react";
 import Link from 'next/link';
 import Image from 'next/image';
 
-const Navbar: React.FC<{}> = props => {
+function Navbar () {
     return (
         <nav className='flex bg-blue-400 text-white h-16 justify-between items-center p-4'>
             <Link href={'/'}>

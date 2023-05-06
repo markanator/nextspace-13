@@ -1,4 +1,4 @@
 {
-  "useTabs": true,
-  "spaces": 2
+	"useTabs": true,
+	"tabWidth": 2
 }

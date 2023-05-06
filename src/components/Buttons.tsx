@@ -15,7 +15,7 @@ export function SignInButton() {
 	if (status === "authenticated") {
 		return (
 			<>
-				<Link href={`/dashboard`} className="mx-2">
+				<Link href={`/dashboard`} className="mx-2 flex items-center justify-center">
 					<Image
 						src={session.user?.image ?? "/mememan.webp"}
 						width={32}
@@ -33,5 +33,12 @@ export function SignInButton() {
 }
 
 export function SignOutButton() {
-	return <button onClick={() => signOut()}>Sign out</button>;
+	return (
+		<button
+			onClick={() => signOut()}
+			className="bg-sky-500 hover:bg-sky-700 px-5 py-2.5 text-sm leading-5 rounded-md font-semibold text-white"
+		>
+			Sign out
+		</button>
+	);
 }

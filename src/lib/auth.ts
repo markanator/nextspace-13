@@ -1,6 +1,8 @@
+import { PrismaClient } from "@prisma/client";
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
-import { prisma } from "./prisma";
 import GithubProvider from "next-auth/providers/github";
+
+const prisma = new PrismaClient();
 
 export const authOptions = {
 	adapter: PrismaAdapter(prisma),

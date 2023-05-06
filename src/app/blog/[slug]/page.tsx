@@ -1,5 +1,3 @@
-export const revalidate = 1200; // not necessary, just for ISR demonstration
-
 interface Post {
 	title: string;
 	content: string;

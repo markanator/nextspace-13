@@ -13,7 +13,6 @@ export async function GET(req: Request) {
 			email: true,
 		},
 	});
-	console.log(users);
 
 	return NextResponse.json(users);
 }
